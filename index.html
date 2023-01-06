@@ -96,37 +96,34 @@
           <h3>I write sometimes about technoligy, web 3 etc</h3>
           <a class="btn btn-outline" href="">READ BLOG</a>
         </div>
-      </div>
-      <div class="request-form card">
-        <h2>Request a Demo</h2>
-        <form
-          name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
-            <label>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-          </p>
-          <div class="form-control">
-            <input type="text" name="name" placeholder="Name" required />
-          </div>
-          <div class="form-control">
-            <input
-              type="text"
-              name="Company"
-              placeholder="Company Name"
-              required
-            />
-          </div>
-          <div class="form-control">
-            <input type="email" name="email" placeholder="Email" required />
-          </div>
-          <input type="submit" value="Send" class="btn btn-primary" />
-        </form>
+
+        <div class="request-form card">
+          <h2>Request a Demo</h2>
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you’re human: <input name="bot-field" />
+              </label>
+            </p>
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-control">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary" />
+          </form>
+        </div>
       </div>
     </section>
   </body>
