@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tobezzi's Home</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <img
+          class="logo"
+          src="images/TO.png"
+          alt=""
+          onclick="window.location.href = '#Home'"
+        />
+        <nav>
+          <ul>
+            <li>
+              <a href="#" style="--clr: #3fed2f; --i: 0"
+                ><span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#" style="--clr: #00ccff; --i: 0"
+                ><span>Let's talk</span></a
+              >
+            </li>
+            <li>
+              <a href="#" style="--clr: #3fed2f; --i: 0"><span>Blog</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- intro -->
+    <section id="Home" class="intro">
+      <div class="container grid">
+        <div class="intro-text">
+          <h1>Hi, I am Tobezzi</h1>
+          <div class="wrapper">
+            <div class="static-text">I am</div>
+            <ul class="dynamic-text">
+              <li style="color: #f0fc05"><span> a Developer</span></li>
+              <li><span> a Solidity DEV</span></li>
+              <li style="color: #3fed2f"><span> a Frontend DEV</span></li>
+              <li><span> a Writer</span></li>
+            </ul>
+          </div>
+          <p>
+            I am a developer and web 3 native. Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa <strong>strong</strong>. Cum sociis.
+          </p>
+        </div>
+        <div>
+          <img src="images/Team player dark].gif" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- reson to hire -->
+    <section class="hire my-1 py-1">
+      <div class="container grid">
+        <img src="images/Untitled (400 × 400px) (1).png" alt="" />
+        <div class="about-me">
+          <h2>Why me?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+            justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+            justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+            dictum felis eu pede
+            <a class="external ext" href="#">link</a> mollis pretium. Integer
+            tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+            consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+            varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+            nisi vel augue. Curabitur ullamcorper ultricies nisi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section class="form my-2 py-2">
+      <div class="container grid">
+        <div>
+          <h3>I write sometimes about technoligy, web 3 etc</h3>
+          <a class="btn btn-outline" href="">READ BLOG</a>
+        </div>
+      </div>
+      <div class="request-form card">
+        <h2>Request a Demo</h2>
+        <form
+          name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <div class="form-control">
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="Company"
+              placeholder="Company Name"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <input type="submit" value="Send" class="btn btn-primary" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
