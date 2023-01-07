@@ -26,7 +26,7 @@
               >
             </li>
             <li>
-              <a href="#" style="--clr: #00ccff; --i: 0"
+              <a href="#Form" style="--clr: #00ccff; --i: 0"
                 ><span>Let's talk</span></a
               >
             </li>
@@ -92,13 +92,18 @@
     <!-- form -->
     <section class="form my-2 py-2">
       <div class="container grid">
-        <div>
-          <h3>I write sometimes about technoligy, web 3 etc</h3>
+        <div class="form-text">
+          <h3>I write sometimes about technology and web 3</h3>
+          <p>Fun Fact: I am a certified writer!</p>
           <a class="btn btn-outline" href="">READ BLOG</a>
         </div>
 
-        <div class="request-form card">
-          <h2>Request a Demo</h2>
+        <div id="Form" class="request-form card">
+          <h3>Send me a message</h3>
+          <p>
+            if you have a question, proposal, or just want to say hello!, Lets
+            talk
+          </p>
           <form
             name="contact"
             method="POST"
@@ -112,17 +117,51 @@
               </label>
             </p>
             <div class="form-control">
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" required />
+              <i>Name</i>
             </div>
 
             <div class="form-control">
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="email" name="email" required />
+              <i>Email</i>
             </div>
             <div class="form-control">
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea
+                style="
+                  font-family: 'Merriweather sans', sans-serif;
+                  font-size: 12px;
+                  opacity: 0.7;
+                "
+                placeholder="Can you design a portfolio website without a blog?"
+                name=""
+                id=""
+                cols="10"
+                rows="5"
+              ></textarea>
             </div>
             <input type="submit" value="Send" class="btn btn-primary" />
           </form>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio -->
+    <section class="porfolio">
+      <h2>Portfolio</h2>
+      <div class="container flex">
+        <div class="card">
+          <img src="images/TO.png" alt="" />
+          <div>
+            <h4>Project Name:</h4>
+            <p>Description:</p>
+          </div>
+          <div>
+            <h4>Description:</h4>
+            <p>This is my portfolio</p>
+          </div>
+          <div>
+            <h4>Link:</h4>
+            <a href="#">This is my portfolio</a>
+          </div>
         </div>
       </div>
     </section>
