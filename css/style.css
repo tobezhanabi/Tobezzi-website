@@ -345,3 +345,39 @@ ul {
   font-size: 14px;
   opacity: 0.7;
 }
+/* porfolio */
+.porfolio {
+  margin: 70px;
+}
+.porfolio .container {
+  max-width: 1400px;
+}
+.porfolio h2 {
+  text-align: center;
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+.porfolio .card {
+  width: 300px;
+}
+
+.porfolio img {
+  width: 90%;
+  align-self: center;
+}
+.porfolio a {
+  text-decoration: none;
+}
+/* footer */
+.footer .social a {
+  margin: 0 10px;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer {
+  background-color: #181818;
+  color: #fff;
+}

@@ -19,6 +19,10 @@
   align-items: center;
   height: 100%;
 }
+.grid-3 {
+  grid-template-columns: repeat(3, 2fr);
+}
+
 .card {
   background-color: white;
   color: #333;
@@ -53,4 +57,7 @@
 /* paddding */
 .py-1 {
   padding: 1rem 0;
+}
+.py-5 {
+  padding: 4rem 0;
 }
