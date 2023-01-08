@@ -208,6 +208,8 @@ ul {
   height: 100%;
   width: 100%;
   justify-content: flex-end;
+  animation: slideInFromLeft 1s ease-in;
+  -webkit-animation: slideInFromLeft 1s ease-in;
 }
 
 .hire .about-me {
@@ -273,8 +275,7 @@ ul {
   padding: 20px;
   justify-self: flex-end;
 
-  /*animation: slideInFromRight 1s ease-in;
-  */
+  animation: slideInFromRight 1s ease-in;
 }
 .request-form .card {
   transition: transfrom 0.5s ease-in;
@@ -347,31 +348,60 @@ ul {
 }
 /* porfolio */
 .porfolio {
-  margin: 70px;
+  background-color: #181818;
 }
 .porfolio .container {
-  max-width: 1400px;
-}
-.porfolio h2 {
-  text-align: center;
-  letter-spacing: 8px;
-  margin-bottom: 30px;
-}
-.porfolio .card {
-  width: 300px;
+  width: 1400px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
+.porfolio h2 {
+  color: #0554f2;
+  text-align: center;
+  letter-spacing: 8px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+.porfolio .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.porfolio .container:hover .card {
+  opacity: 0.3;
+  transform: scale(0.9);
+  filter: blur(5px);
+}
+.porfolio .container .card:hover {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+  transform: translateX(-10px);
+  transition: 0.5s;
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+}
 .porfolio img {
   width: 90%;
   align-self: center;
+  cursor: pointer;
 }
-.porfolio a {
-  text-decoration: none;
-}
+
 /* footer */
+.footer .container {
+  padding-top: 100px;
+}
 .footer .social a {
   margin: 0 10px;
   color: #fff;
+}
+.footer .social a:hover {
+  color: #0554f2;
 }
 .footer a {
   color: #fff;
@@ -380,4 +410,75 @@ ul {
 .footer {
   background-color: #181818;
   color: #fff;
+}
+
+/* animation*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* tablets and under */
+/*  since this is a desktop first */
+@media (max-width: 768px) {
+  .form .grid,
+  .porfolio .grid {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .porfolio .grid {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .form .form-text {
+    z-index: 1000;
+    position: relative;
+    justify-items: center;
+  }
+  .grid,
+  .intro .grid,
+  .hire .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .intro {
+    height: auto;
+  }
+  .intro-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+  .intro img {
+    display: flex;
+    margin-left: 75px;
+  }
 }
