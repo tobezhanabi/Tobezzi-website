@@ -558,6 +558,7 @@ ul {
   }
   .porfolio .card {
     width: 250px;
+    justify-content: center;
   }
   .porfolio .container {
     width: 100%;
