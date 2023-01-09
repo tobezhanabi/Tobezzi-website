@@ -467,7 +467,7 @@ ul {
   }
   .navbar a {
     position: relative;
-    padding: 5px 10px;
+    padding: 5px 5px;
     display: flex;
     margin: 5px 10px;
   }
@@ -535,6 +535,9 @@ ul {
   .navbar ul {
     padding: 10px;
   }
+  .navbar span {
+    font-size: 1rem;
+  }
 
   .wrapper {
     display: block;
@@ -564,7 +567,7 @@ ul {
     padding: 5px 20px;
   }
   .form .request-form {
-    width: 350px;
+    width: 340px;
   }
   .request-form h3 {
     word-spacing: 1px;
