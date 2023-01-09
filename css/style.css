@@ -553,7 +553,10 @@ ul {
   .porfolio h2 {
     padding-top: 180px;
   }
+  .porfolio .card {
+    width: 100%;
+  }
   .form .request-form {
-    width: 90%;
+    width: 350px;
   }
 }
