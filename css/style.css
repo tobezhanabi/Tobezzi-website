@@ -554,9 +554,12 @@ ul {
     padding-top: 180px;
   }
   .porfolio .card {
-    width: 100%;
+    width: 250px;
   }
   .form .request-form {
-    width: 400px;
+    width: 370px;
+  }
+  .request-form h3 {
+    word-spacing: 1px;
   }
 }
