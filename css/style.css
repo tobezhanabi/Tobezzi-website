@@ -108,6 +108,8 @@ ul {
 .intro img {
   position: relative;
   padding-top: 50px;
+  height: 100%;
+  width: 100%;
   z-index: 100;
   border-radius: 10px;
   /* box-shadow: 3px -5px 12px 1px rgba(15, 15, 15, 0.45); */
@@ -132,6 +134,7 @@ ul {
 }
 .wrapper {
   display: inline-flex;
+  width: 100%;
 }
 .wrapper .static-text {
   padding-top: 5px;
@@ -149,6 +152,7 @@ ul {
   font-size: 50px;
   position: relative;
   top: 0;
+
   z-index: 1000;
   /* justify-self: center;
   align-items: center; */
@@ -367,6 +371,7 @@ ul {
 .porfolio .container {
   position: relative;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -391,7 +396,9 @@ ul {
   align-self: center;
   cursor: pointer;
 }
-
+.porfolio img:hover {
+  opacity: 0.6;
+}
 /* footer */
 .footer .container {
   padding-top: 100px;
@@ -448,11 +455,29 @@ ul {
 /* tablets and under */
 /*  since this is a desktop first */
 @media (max-width: 768px) {
+  .intro img {
+    height: auto;
+    max-width: 100%;
+  }
   .form .grid,
   .porfolio .grid {
     display: block;
     align-items: center;
     justify-content: center;
+  }
+  .navbar a {
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    margin: 5px 10px;
+  }
+  .navbar .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .navbar {
+    height: 200px;
+    display: block;
   }
   .porfolio .grid {
     width: 70%;
@@ -477,8 +502,54 @@ ul {
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
   }
-  .intro img {
+  /* .intro img {
     display: flex;
     margin-left: 75px;
+  } */
+  .footer .social a {
+    margin: 0 5px;
+    color: #fff;
+  }
+  .form .request-form {
+    top: 30px;
+  }
+  .porfolio h2 {
+    padding-top: 150px;
+  }
+
+  .request-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+}
+@media (max-width: 550px) {
+  .navbar {
+    height: 200px;
+    display: block;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+  .wrapper .static-text,
+  .dynamic-text li {
+    font-size: 30px;
+  }
+
+  .dynamic-text li span::after {
+    padding-bottom: 50px;
+    height: 80%;
+    width: 100%;
+  }
+
+  .porfolio h2 {
+    padding-top: 180px;
   }
 }
