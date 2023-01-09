@@ -556,8 +556,15 @@ ul {
   .porfolio .card {
     width: 250px;
   }
+  .porfolio .container {
+    width: 100%;
+  }
+  .porfolio .btn {
+    display: inline-block;
+    padding: 5px 20px;
+  }
   .form .request-form {
-    width: 370px;
+    width: 350px;
   }
   .request-form h3 {
     word-spacing: 1px;
