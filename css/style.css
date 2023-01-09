@@ -517,8 +517,9 @@ ul {
     padding-top: 150px;
   }
 
-  .request-form {
+  .form .request-form {
     justify-self: center;
+    width: 100%;
     margin: auto;
     animation: slideInFromBottom 1s ease-in;
   }
@@ -551,5 +552,8 @@ ul {
 
   .porfolio h2 {
     padding-top: 180px;
+  }
+  .form .request-form {
+    width: 90%;
   }
 }
